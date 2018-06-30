@@ -1,0 +1,33 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+springBoot {
+    mainClassName = 'com.wechat.Application'
+}
+
+dependencies {
+    compile(
+            project(':web:plateform-web-api'),
+
+            libraries."commons-lang3",
+            libraries."commons-collections4",
+            libraries."modelmapper",
+            libraries."spring-boot-starter-web",
+            libraries."spring-boot-starter-websocket",
+            libraries."spring-boot-starter-data-redis",
+            libraries."spring-boot-starter-data-jpa",
+
+            libraries."springfox-swagger",
+            libraries."springfox-swagger-ui",
+            libraries."alex-common-mini",
+            libraries."alex-common-jpa"
+    )
+
+    provided(libraries."lombok")
+
+    runtime(
+            libraries."hsqldb",
+            libraries."mysql-connector-java",
+//            libraries."spring-boot-properties-migrator",
+    )
+}

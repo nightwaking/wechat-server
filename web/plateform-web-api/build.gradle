@@ -1,0 +1,6 @@
+dependencies {
+    compile(
+            libraries."spring-web",
+            libraries."commons-collections4",
+    )
+}

@@ -1,0 +1,43 @@
+ext.versions = [
+        springBoot        : '2.0.0.RELEASE',
+        springVersion     : '5.0.4.RELEASE',
+        springKafkaVersion: '2.1.4.RELEASE',
+        kafkaClientVersion: "1.0.0",
+        alexCommonsVersion: '1.0',
+        lombokVersion     : '1.16.20'
+]
+ext.libraries = [
+        "commons-lang3"                  : "org.apache.commons:commons-lang3:3.4",
+        "commons-collections4"           : "org.apache.commons:commons-collections4:4.1",
+        "modelmapper"                    : "org.modelmapper:modelmapper:0.7.7",
+
+        "spring-boot"                    : "org.springframework.boot:spring-boot:${versions.springBoot}",
+//        "spring-boot-properties-migrator": "org.springframework.boot:spring-boot-properties-migrator:${versions.springBoot}",
+        "spring-boot-autoconfigure"      : "org.springframework.boot:spring-boot-autoconfigure:${versions.springBoot}",
+        "spring-boot-starter-web"        : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
+        "spring-boot-starter-websocket"  : "org.springframework.boot:spring-boot-starter-websocket:${versions.springBoot}",
+        "spring-boot-starter-security"   : "org.springframework.boot:spring-boot-starter-security:${versions.springBoot}",
+        "spring-boot-starter-data-jpa"   : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+        "spring-boot-starter-data-redis" : "org.springframework.boot:spring-boot-starter-data-redis:${versions.springBoot}",
+
+        "spring-kafka"                   : "org.springframework.kafka:spring-kafka:${versions.springKafkaVersion}",
+        "kafka-streams"                  : "org.apache.kafka:kafka-streams:${versions.kafkaClientVersion}",
+
+        "alex-common-mini"               : "com.alex.commons:common-mini:${versions.alexCommonsVersion}",
+        "alex-common-biz"                : "com.alex.commons:common-biz:${versions.alexCommonsVersion}",
+        "alex-common-jpa"                : "com.alex.commons:common-jpa:${versions.alexCommonsVersion}",
+
+        "lombok"                         : "org.projectlombok:lombok:${versions.lombokVersion}",
+
+        "spring-web"                     : "org.springframework:spring-web:${versions.springVersion}",
+        "spring-context"                 : "org.springframework:spring-context:${versions.springVersion}",
+        "jackson-databind"               : "com.fasterxml.jackson.core:jackson-databind:2.9.4",
+
+        //swagger2
+        "springfox-swagger"              : "io.springfox:springfox-swagger2:2.7.0",
+        "springfox-swagger-ui"           : "io.springfox:springfox-swagger-ui:2.7.0",
+
+        // run time
+        "mysql-connector-java"           : "mysql:mysql-connector-java:5.1.37",
+        "hsqldb"                         : "org.hsqldb:hsqldb:2.3.3",
+]
